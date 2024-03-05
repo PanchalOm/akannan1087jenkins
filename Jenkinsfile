@@ -49,9 +49,9 @@ pipeline{
        stage('Testing by sonar'){
             steps{
                 
-                 bat ''' mvn sonar:sonar -Dsonar.url-http://localhost:9000/ -Dsonar.login-squ_abb67d36969df874cb80b76166032e71de78defa -Dsonar.projectname-Akannan jenkins \
+                 bat ''' mvn sonar:sonar -Dsonar.url-http://localhost:9000/ -Dsonar.login-squ_abb67d36969df874cb80b76166032e71de78defa -Dsonar.projectname-Akannan-jenkins \
                      -Dsonar.java.binaries=. \
-                     -Dsonar.projectKey=Akannan jenkins'''
+                     -Dsonar.projectKey=Akannan-jenkins'''
             
             }
          }   
